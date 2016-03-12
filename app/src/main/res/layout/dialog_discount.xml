@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/discount"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="@string/discount_dialog"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:weightSum="1">
+        <ImageView
+            android:id="@+id/item_image"
+            android:layout_weight=".28"
+            android:layout_width="0dp"
+            android:src="@drawable/image_pants"
+            android:scaleType="fitXY"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/background_border"
+            android:layout_height="130dp" />
+        <LinearLayout
+            android:padding="5dp"
+            android:orientation="vertical"
+            android:layout_weight=".68"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:textColor="@android:color/white"
+                android:text="Men's Trousers"/>
+            <TextView
+                android:id="@+id/item_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:textColor="@android:color/white"
+                android:text="Size: 36 x 32"/>
+            <TextView
+                android:id="@+id/item_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:textColor="@android:color/white"
+                android:text="$43.00"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

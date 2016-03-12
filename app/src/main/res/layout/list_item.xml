@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:weightSum="1">
+    <ImageView
+        android:id="@+id/item_image"
+        android:layout_weight=".28"
+        android:layout_width="0dp"
+        android:src="@drawable/image_pants"
+        android:scaleType="fitXY"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/background_border"
+        android:layout_height="130dp" />
+    <LinearLayout
+        android:padding="5dp"
+        android:orientation="vertical"
+        android:layout_weight=".48"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:textColor="@color/baskit_red"
+            android:text="Men's Trousers"/>
+        <TextView
+            android:id="@+id/item_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:textColor="@android:color/black"
+            android:text="Size: 36 x 32"/>
+        <TextView
+            android:id="@+id/item_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:textColor="@android:color/black"
+            android:text="Quantity: 1"/>
+        <TextView
+            android:id="@+id/item_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:textColor="@android:color/black"
+            android:text="$43.00"/>
+        <LinearLayout
+            android:id="@+id/friend_holder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:src="@drawable/icon_person"/>
+            <TextView
+                android:id="@+id/friend_count"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:textSize="13dp"
+                android:textColor="@color/baskit_red"
+                android:text="4 Friends Approve"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/offer_holder"
+        android:orientation="vertical"
+        android:layout_weight=".26"
+        android:layout_gravity="center_vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/offer"
+            android:src="@drawable/icon_offer"
+            android:scaleType="fitCenter"
+            android:layout_width="match_parent"
+            android:layout_height="70dp" />
+    </LinearLayout>
+</LinearLayout>
